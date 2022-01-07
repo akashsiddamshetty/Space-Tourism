@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  &-divA {
+    height: 23.875rem;
+    width: 33.125rem;
+    margin-top: 15.6875rem;
+    margin-left: 10.3125rem;
+    margin-bottom: 8.1875rem;
+  }
+  button {
+    position: absolute;
+    height: 17.125rem;
+    width: 17.125rem;
+    border-radius: 50%;
+    margin-top: 22.4375rem;
+    margin-left: 62.5625rem;
+    border: none;
+    color: $primary;
+    cursor: pointer;
+    h4 {
+      color: $secondary;
+    }
+  }
+}

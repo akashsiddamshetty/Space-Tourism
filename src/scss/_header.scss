@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 3.4375rem;
+  padding-top: 2.5rem;
+  width: 86.5625rem;
+  height: 6rem;
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+  &-line {
+    width: 29.5625rem;
+    height: 0.0625rem;
+    background-color: #979797;
+    left: 11rem;
+    position: absolute;
+  }
+  &-menucantainer {
+    position: absolute;
+    left: 38.125rem;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    height: 96px;
+    width: 51.875rem;
+    opacity: 0.3;
+    z-index: 0;
+  }
+  &-menucontent {
+    position: absolute;
+    width: 33.875rem;
+    left: 45.8125rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    span {
+      font-size: 1rem;
+      letter-spacing: 0.16875rem;
+      font-family: "Barlow Condensed", sans-serif;
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+}

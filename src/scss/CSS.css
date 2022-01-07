@@ -1,0 +1,157 @@
+body,
+html {
+  font-family: "Bellefair", serif;
+  margin: 0;
+  padding: 0;
+}
+
+body a,
+html a {
+  text-decoration: none;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+html h1,
+html h2,
+html h3,
+html h4 {
+  color: white;
+  margin: 0;
+}
+
+body h1,
+html h1 {
+  font-size: 9.375rem;
+  font-weight: 400;
+}
+
+body h2,
+html h2 {
+  font-size: 6.25rem;
+}
+
+body h3,
+html h3 {
+  font-size: 3.5rem;
+}
+
+body h4,
+html h4 {
+  font-size: 2rem;
+}
+
+body h5,
+html h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.296875rem;
+  color: #d0d6f9;
+  margin: 0;
+  padding: 0;
+}
+
+body p,
+html p {
+  font-size: 1.125rem;
+  color: #d0d6f9;
+  line-height: 2rem;
+}
+
+.global {
+  background-size: cover;
+  height: 56.25rem;
+  width: 90rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 3.4375rem;
+  padding-top: 2.5rem;
+  width: 86.5625rem;
+  height: 6rem;
+}
+
+.header img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.header-line {
+  width: 29.5625rem;
+  height: 0.0625rem;
+  background-color: #979797;
+  left: 11rem;
+  position: absolute;
+}
+
+.header-menucantainer {
+  position: absolute;
+  left: 38.125rem;
+  background-color: rgba(0, 0, 0, 0.61);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 96px;
+  width: 51.875rem;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.header-menucontent {
+  position: absolute;
+  width: 33.875rem;
+  left: 45.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+.header-menucontent span {
+  font-size: 1rem;
+  letter-spacing: 0.16875rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-divA {
+  height: 23.875rem;
+  width: 33.125rem;
+  margin-top: 15.6875rem;
+  margin-left: 10.3125rem;
+  margin-bottom: 8.1875rem;
+}
+
+.home button {
+  position: absolute;
+  height: 17.125rem;
+  width: 17.125rem;
+  border-radius: 50%;
+  margin-top: 22.4375rem;
+  margin-left: 62.5625rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.home button h4 {
+  color: #d0d6f9;
+}
+/*# sourceMappingURL=CSS.css.map */

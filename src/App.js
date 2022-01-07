@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./scss/CSS.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Destination from "./components/Destination";
+import Crew from "./components/Crew";
+import Technology from "./components/Technology";
+import homebgimg from './components/assets/home/background-home-desktop.jpg';
+import destinationbgimg from './components/assets/destination/background-destination-desktop.jpg';
+import crewbgimg from './components/assets/crew/background-crew-desktop.jpg';
+import technology from './components/assets/technology/background-technology-desktop.jpg';
 function App() {
+  const [state, setState] = React.useState(1);
+  const handleSelectPage = (e, { id: selectedPageId }) => {
+    setState(selectedPageId);
+  };
+  const images = [
+    '',
+    homebgimg,
+    destinationbgimg,
+    crewbgimg,
+    technology
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="global" style={{ backgroundImage: `url(${images[state]})` }} >
+        <Router>
+          <Header state={state} handleSelectPage={handleSelectPage} />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/Destination" element={<Destination />} />
+            <Route exact path="/Crew" element={<Crew />} />
+            <Route exact path="/Technology" element={<Technology />} />
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 
