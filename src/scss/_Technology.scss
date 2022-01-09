@@ -1,0 +1,53 @@
+.technology {
+  display: flex;
+  &-heading {
+    width: 23.875rem;
+    height: 2.125rem;
+    margin-top: 4.75rem;
+    margin-left: 10.40625rem;
+    h5 {
+      color: $primary;
+      span {
+        font-weight: bold;
+        color: $secondary;
+      }
+    }
+  }
+  &-buttoncontainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    margin-top: 8.5625rem;
+    margin-left: 10.3125rem;
+    &-button {
+      width: 5rem;
+      height: 5rem;
+      background-color: $third;
+      border-radius: 50%;
+      border: 1px solid $secondary;
+      cursor: pointer;
+      margin-bottom: 2rem;
+    }
+  }
+  &-content {
+    margin-top: 8.5625rem;
+    margin-left: 20.3125rem;
+    width: 35.375rem;
+    height: 18.9375rem;
+    span {
+      font-size: 1rem;
+      letter-spacing: 0.16875rem;
+      font-family: "Barlow Condensed", sans-serif;
+      color: $secondary;
+    }
+    p {
+      width: 27.75rem;
+    }
+  }
+
+  &-images {
+    margin-top: 8.5rem;
+    margin-left: 2.125rem;
+  }
+}

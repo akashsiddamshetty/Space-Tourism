@@ -11,12 +11,17 @@ import destinationbgimg from './components/assets/destination/background-destina
 import crewbgimg from './components/assets/crew/background-crew-desktop.jpg';
 import technology from './components/assets/technology/background-technology-desktop.jpg';
 function App() {
-  const [state, setState] = React.useState(1);
+  const storedValueAsNumber = Number(localStorage.getItem("state"));
+  const [state, setState] = React.useState(Number.isInteger(storedValueAsNumber) ? storedValueAsNumber : 0);
   const handleSelectPage = (e, { id: selectedPageId }) => {
     setState(selectedPageId);
   };
+
+  React.useEffect(() => {
+    localStorage.setItem("state", String(state))
+  }, [state])
+
   const images = [
-    '',
     homebgimg,
     destinationbgimg,
     crewbgimg,

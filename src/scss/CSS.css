@@ -20,6 +20,8 @@ html h3,
 html h4 {
   color: white;
   margin: 0;
+  font-weight: 100;
+  font-weight: 100;
 }
 
 body h1,
@@ -117,12 +119,17 @@ html p {
   z-index: 1;
 }
 
-.header-menucontent span {
+.header-menucontent-text {
   font-size: 1rem;
   letter-spacing: 0.16875rem;
   font-family: "Barlow Condensed", sans-serif;
   color: white;
   cursor: pointer;
+}
+
+.header-menucontent-text span {
+  font-weight: bold;
+  margin-right: 0.6875rem;
 }
 
 .home {
@@ -153,5 +160,218 @@ html p {
 
 .home button h4 {
   color: #d0d6f9;
+}
+
+.destination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.destination-heading {
+  width: 23.875rem;
+  height: 2.125rem;
+  margin-top: 4.75rem;
+  margin-left: 10.40625rem;
+}
+
+.destination-heading h5 {
+  color: white;
+}
+
+.destination-heading h5 span {
+  font-weight: bold;
+  color: #d0d6f9;
+}
+
+.destination-images {
+  margin-top: 6.0625rem;
+  margin-left: 14.375rem;
+}
+
+.destination-content {
+  width: 32.813rem;
+  height: 29.5rem;
+  margin-top: 10.875rem;
+  margin-left: 9.8125rem;
+}
+
+.destination-content-menucontent {
+  width: 17.84375rem;
+  height: 2.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+.destination-content-menucontent-text {
+  font-size: 1rem;
+  letter-spacing: 0.16875rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.destination-content-menucontent-text span {
+  font-weight: bold;
+  margin-right: 0.6875rem;
+}
+
+.destination-content-menucontent-line {
+  width: 32.813rem;
+  height: 0.0625rem;
+  margin-top: 3.375rem;
+  background-color: #979797;
+  position: relative;
+}
+
+.destination-content-menucontent-disandtime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 24.5rem;
+  height: 3.8125rem;
+  margin-top: 1.75rem;
+}
+
+.destination-content-menucontent-disandtime span {
+  letter-spacing: 0.1475rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.875rem;
+  margin-top: 1.75rem;
+  color: #d0d6f9;
+}
+
+.destination-content-menucontent-disandtime h5 {
+  margin-top: 0.75rem;
+}
+
+.crew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crew-container {
+  margin-top: 4.75rem;
+  margin-left: 10.40625rem;
+  width: 40.375rem;
+}
+
+.crew-container h4 {
+  margin-top: 9.625rem;
+  color: #d0d6f9;
+}
+
+.crew-container h5 {
+  margin-top: 0.9375rem;
+  color: white;
+}
+
+.crew-container h5 span {
+  font-weight: bold;
+  color: #d0d6f9;
+}
+
+.crew-container p {
+  margin-top: 1.6875rem;
+  width: 27.75rem;
+}
+
+.crew-container-buttoncontainer {
+  position: absolute;
+  top: 49.4375rem;
+}
+
+.crew-container-buttoncontainer-button {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: #d0d6f9;
+  border-radius: 50%;
+  border: 1px solid #d0d6f9;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.crew-images {
+  position: absolute;
+  bottom: -40%;
+  margin-left: 50.9375rem;
+}
+
+.technology {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.technology-heading {
+  width: 23.875rem;
+  height: 2.125rem;
+  margin-top: 4.75rem;
+  margin-left: 10.40625rem;
+}
+
+.technology-heading h5 {
+  color: white;
+}
+
+.technology-heading h5 span {
+  font-weight: bold;
+  color: #d0d6f9;
+}
+
+.technology-buttoncontainer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 5rem;
+  margin-top: 8.5625rem;
+  margin-left: 10.3125rem;
+}
+
+.technology-buttoncontainer-button {
+  width: 5rem;
+  height: 5rem;
+  background-color: #0b0d17;
+  border-radius: 50%;
+  border: 1px solid #d0d6f9;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.technology-content {
+  margin-top: 8.5625rem;
+  margin-left: 20.3125rem;
+  width: 35.375rem;
+  height: 18.9375rem;
+}
+
+.technology-content span {
+  font-size: 1rem;
+  letter-spacing: 0.16875rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+}
+
+.technology-content p {
+  width: 27.75rem;
+}
+
+.technology-images {
+  margin-top: 8.5rem;
+  margin-left: 2.125rem;
 }
 /*# sourceMappingURL=CSS.css.map */

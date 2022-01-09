@@ -1,0 +1,69 @@
+.destination {
+  display: flex;
+  &-heading {
+    width: 23.875rem;
+    height: 2.125rem;
+    margin-top: 4.75rem;
+    margin-left: 10.40625rem;
+    h5 {
+      color: $primary;
+      span {
+        font-weight: bold;
+        color: $secondary;
+      }
+    }
+  }
+
+  &-images {
+    margin-top: 6.0625rem;
+    margin-left: 14.375rem;
+  }
+  &-content {
+    width: 32.813rem;
+    height: 29.5rem;
+    margin-top: 10.875rem;
+    margin-left: 9.8125rem;
+    &-menucontent {
+      width: 17.84375rem;
+      height: 2.125rem;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+      &-text {
+        font-size: 1rem;
+        letter-spacing: 0.16875rem;
+        font-family: "Barlow Condensed", sans-serif;
+        color: $primary;
+        cursor: pointer;
+        span {
+          font-weight: bold;
+          margin-right: 0.6875rem;
+        }
+      }
+      &-line {
+        width: 32.813rem;
+        height: 0.0625rem;
+        margin-top: 3.375rem;
+        background-color: #979797;
+        position: relative;
+      }
+      &-disandtime {
+        display: flex;
+        justify-content: space-between;
+        width: 24.5rem;
+        height: 3.8125rem;
+        margin-top: 1.75rem;
+        span {
+          letter-spacing: 0.1475rem;
+          font-family: "Barlow Condensed", sans-serif;
+          font-size: 0.875rem;
+          margin-top: 1.75rem;
+          color: $secondary;
+        }
+        h5 {
+          margin-top: 0.75rem;
+        }
+      }
+    }
+  }
+}

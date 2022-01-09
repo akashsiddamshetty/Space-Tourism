@@ -33,12 +33,16 @@
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    span {
+    &-text {
       font-size: 1rem;
       letter-spacing: 0.16875rem;
       font-family: "Barlow Condensed", sans-serif;
       color: $primary;
       cursor: pointer;
+      span {
+        font-weight: bold;
+        margin-right: 0.6875rem;
+      }
     }
   }
 }
