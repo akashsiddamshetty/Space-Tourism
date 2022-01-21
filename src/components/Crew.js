@@ -5,14 +5,14 @@ import markimg from './assets/crew/image-mark-shuttleworth.png';
 import victorimg from './assets/crew/image-victor-glover.png';
 import ansariimg from './assets/crew/image-anousheh-ansari.png';
 const Crew = () => {
-    const storedValueAsNumber = Number(localStorage.getItem("crewState"));
-    const [crewState, setCrewState] = React.useState(Number.isInteger(storedValueAsNumber) ? storedValueAsNumber : 0);
-    const handleSelectedCrew = (e, { id: selectedCrew }) => {
-        setCrewState(selectedCrew);
+    const storedValueAsNumber = Number(localStorage.getItem("state"));
+    const [state, setState] = React.useState(Number.isInteger(storedValueAsNumber) ? storedValueAsNumber : 0);
+    const handleSelectedCrew = (e, { id: selectedThumbhnail }) => {
+        setState(selectedThumbhnail);
     };
     React.useEffect(() => {
-        localStorage.setItem("crewState", String(crewState))
-    }, [crewState])
+        localStorage.setItem("state", String(state))
+    }, [state])
 
 
     const CrewDetailes = [
@@ -50,13 +50,13 @@ const Crew = () => {
             <div className='crew-container'>
 
                 <h5><span>02</span> MEET YOUR CREW</h5>
-                <h4>{CrewDetailes[crewState].heading}</h4>
-                <h3>{CrewDetailes[crewState].name}</h3>
-                <p>{CrewDetailes[crewState].about}</p>
+                <h4>{CrewDetailes[state].heading}</h4>
+                <h3>{CrewDetailes[state].name}</h3>
+                <p>{CrewDetailes[state].about}</p>
                 <Menu className='crew-container-buttoncontainer'>
                     <Menu.Item
                         id={0}
-                        active={crewState === 0}
+                        active={state === 0}
                         onClick={handleSelectedCrew}
                         key={0}
                     >
@@ -66,7 +66,7 @@ const Crew = () => {
                     </Menu.Item>
                     <Menu.Item
                         id={1}
-                        active={crewState === 1}
+                        active={state === 1}
                         onClick={handleSelectedCrew}
                         key={1}
                     >
@@ -76,7 +76,7 @@ const Crew = () => {
 
                     <Menu.Item
                         id={2}
-                        active={crewState === 2}
+                        active={state === 2}
                         onClick={handleSelectedCrew}
                         key={2}
                     >
@@ -84,7 +84,7 @@ const Crew = () => {
                     </Menu.Item>
                     <MenuItem
                         id={3}
-                        active={crewState === 3}
+                        active={state === 3}
                         onClick={handleSelectedCrew}
                         key={3}
                     >
@@ -93,7 +93,7 @@ const Crew = () => {
                 </Menu>
             </div>
             <div className='crew-images'>
-                <img src={crewImages[crewState]} alt='crew members' />
+                <img src={crewImages[state]} alt='crew members' />
             </div>
         </div>
     )
